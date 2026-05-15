@@ -21,3 +21,13 @@ add_executable(CLionGraphicsKit main.cpp
         Jatekmester.cpp
         Jatekmester.hpp)
 target_link_libraries(CLionGraphicsKit graphics)
+
+add_custom_command(TARGET CLionGraphicsKit POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        "${PROJECT_SOURCE_DIR}/SDL2.dll"
+        "${PROJECT_SOURCE_DIR}/SDL2_ttf.dll"
+        "${PROJECT_SOURCE_DIR}/libfreetype-6.dll"
+        "${PROJECT_SOURCE_DIR}/zlib1.dll"
+        "${PROJECT_SOURCE_DIR}/LiberationSans-Regular.ttf"
+        $<TARGET_FILE_DIR:CLionGraphicsKit>
+)
