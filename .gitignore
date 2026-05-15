@@ -9,10 +9,3 @@ out/
 *.exe
 *.o
 *.obj
-*.a
-*.lib
-*.dll
-*.so
-*.dylib
-*.out
-*.app
