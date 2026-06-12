@@ -2,6 +2,8 @@
 
 Egyetemi beadandó projekt, amely a klasszikus Amőba (Gomoku) játékot valósítja meg egy 15x15-ös játéktéren. Az alkalmazás C++ nyelven készült, fókuszban az objektumorientált tervezéssel (OOP), a dinamikus memóriakezeléssel, valamint az eseményvezérelt programozással.
 
+![Játékmenet](amoba.PNG)
+
 ## Főbb funkciók
 * **Grafikus felület:** A játék a `genv` (Graphics Environment) grafikus könyvtárat használja a megjelenítéshez (440x600-as ablak).
 * **15x15-ös játéktér:** Két játékos (X és O) váltott körös játéka.
